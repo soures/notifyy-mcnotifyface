@@ -6,31 +6,25 @@
     "type": "git",
     "url": "https://github.com/kokarn/notifyy-mcnotifyface.git"
   },
-  "engines": {
-    "node": "^6.5.0"
+  "devEngines": {
+    "node": "8.x"
   },
   "scripts": {
-      "test": "eslint server.js"
+    "test": "eslint server.js"
   },
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.13.4",
     "marked": "^0.3.6",
-    "node-telegram-bot-api": "^0.23.3",
+    "node-telegram-bot-api": "^0.30.0",
     "randomstring": "^1.1.5"
   },
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^3.4.0",
-    "eslint-config-kokarn": "git+https://github.com/kokarn/eslint-config-kokarn.git"
-  },
-  "eslintConfig": {
-    "extends": "kokarn/node",
-    "rules": {
-      "no-process-env": [
-        "off"
-      ]
-    }
+    "prettier": "^1.10.2",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint-config-with-prettier": "^3.0.0"
   }
 }
